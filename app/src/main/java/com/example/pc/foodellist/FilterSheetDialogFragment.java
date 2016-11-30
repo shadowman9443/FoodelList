@@ -14,7 +14,7 @@ import android.support.design.widget.BottomSheetDialogFragment;
 public class FilterSheetDialogFragment extends BottomSheetDialogFragment {
 
     String mString;
-
+    int max=0;
     static FilterSheetDialogFragment newInstance(String string) {
         FilterSheetDialogFragment f = new FilterSheetDialogFragment();
         Bundle args = new Bundle();
