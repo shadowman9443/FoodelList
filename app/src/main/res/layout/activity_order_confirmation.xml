@@ -1,0 +1,242 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pc.foodellist.OrderConfirmationActivity">
+    <RelativeLayout
+        android:id="@+id/firstHead"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" android:background="#DDDDDD"
+        >
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/left_arrow"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/foodel_mini"
+            android:layout_centerInParent="true"
+            />
+        <TextView
+            android:id="@+id/imgRest"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/question_"
+            android:layout_alignParentRight="true" android:layout_marginRight="10dp"
+
+            />
+        <TextView
+            android:layout_below="@+id/imgRest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Help"
+            android:layout_alignParentRight="true"
+            android:textSize="10sp"
+            android:layout_marginRight="15dp"/>
+
+
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstHead"
+        android:padding="10dp"
+        android:layout_marginBottom="60dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/fstLInear"
+                android:background="#F4F4F4"
+                android:padding="10dp">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="ORDER CONFIRMATION"
+                   android:textColor="@color/black"
+                   android:textSize="12sp"
+                  android:layout_gravity="center"/>
+                <ImageView
+                    android:id="@+id/imageId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/cercle" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bangkok Eatery"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18 Hatfield Road.St Albans. Al1 GHU"
+                    android:textSize="9sp"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Estimated Delivery Today"
+                    android:textSize="9sp"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13:30"
+                    android:textSize="12sp"
+                    android:textColor="#F87217"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Confirmed"
+                    android:textColor="#7FFF00"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/delLin"
+                android:layout_below="@+id/fstLInear"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="#F4F4F4"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivering to:"
+                    android:textSize="9sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18 Hatfield Road.St Albans. Al1 GHU"
+                    android:textSize="12sp"
+                   />
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/orderNumrel"
+                android:layout_below="@+id/delLin"
+                android:background="#F4F4F4"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Order Number"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="£50.75"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/tldFrndLin"
+                android:layout_below="@+id/orderNumrel"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#F4F4F4"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tellFriendDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/tell_a_friend_small"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/footer"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:background="#F4F4F4"
+                    android:paddingTop="10dp" >
+
+                    <ImageView
+                        android:id="@+id/facebookbtn"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/facebook"
+                       />
+
+                    <ImageView
+                        android:id="@+id/twitterBtn"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/facebookbtn"
+                        android:layout_weight="1"
+                        android:background="@drawable/twitter_btn"
+                         />
+
+                    <ImageView
+                        android:id="@+id/smsBtn"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_below="@+id/facebookbtn"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/sms_btn"
+                       />
+
+                    <ImageView
+                        android:id="@+id/emailBtn"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_below="@+id/twitterBtn"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/smsBtn"
+                        android:layout_weight="1"
+                        android:background="@drawable/email"
+                      />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+    <include
+        android:id="@+id/header"
+        layout="@layout/top_bar_three"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>

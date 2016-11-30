@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pc.foodellist.TellAFrndActvity">
+    <RelativeLayout
+        android:id="@+id/firstHead"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" android:background="#DDDDDD"
+        >
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/left_arrow"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/foodel_mini"
+            android:layout_centerInParent="true"
+           />
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/secondHead"
+        android:layout_below="@+id/firstHead"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" android:background="#EAEAEA"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Tell A Friend"
+           android:layout_centerInParent="true"
+         /> >
+
+
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+
+                android:layout_marginRight="15dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tellFriendDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/tell_a_friend"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/footer"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp" >
+
+                    <ImageView
+                        android:id="@+id/facebookbtn"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/facebook"
+                        />
+
+                    <ImageView
+                        android:id="@+id/twitterBtn"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/facebookbtn"
+                        android:layout_weight="1"
+                        android:background="@drawable/twitter_btn"
+                        />
+
+                    <ImageView
+                        android:id="@+id/smsBtn"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_below="@+id/facebookbtn"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/sms_btn"
+                        />
+
+                    <ImageView
+                        android:id="@+id/emailBtn"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_below="@+id/twitterBtn"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/smsBtn"
+                        android:layout_weight="1"
+                        android:background="@drawable/email"
+                         />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <include
+        android:id="@+id/header"
+        layout="@layout/top_bar_two"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

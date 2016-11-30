@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_payment_cash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pc.foodellist.PaymentCashActivity"
+    android:background="#FFFFFF">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linTitleTxt"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/firstHead"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:text="PAYMENT"
+                android:id="@+id/txtPayment"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/txtPayment"
+
+                android:text="How would you like to pay?"
+                android:textSize="15sp"
+                android:id="@+id/place"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/linTitleTxt"
+            android:layout_marginTop="10dp"
+            android:id="@+id/linpaymentcard"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:background="@drawable/edt_square_ash">
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/blnBtn"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/apptheme_btn_radio_off_holo_light"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Pay with debit or credit card"
+                android:padding="5dp"
+                android:textSize="15sp"
+
+                android:layout_toRightOf="@+id/blnBtn"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:id="@+id/textView" />
+            <TextView
+                android:layout_width="15dp"
+                android:layout_height="10dp"
+                android:id="@+id/txtDownArrow"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/down_arrow_payment"/>
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linpaymentcard"
+            android:layout_marginTop="10dp"
+            android:id="@+id/linpaymentcash"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edt_square_ash"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/blnCash"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/apptheme_btn_radio_on_holo_light"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Cash"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+
+                    android:layout_toRightOf="@+id/blnCash"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/textViewCash" />
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="10dp"
+                    android:id="@+id/txtupArrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/up_arrow_payment"/>
+
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/btnlogin"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="52dp"
+                android:layout_marginRight="52dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/shape_button"
+                android:clickable="true"
+                android:gravity="center"
+
+                android:text="Place my order "
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/delvdRestAdrscash"
+            android:layout_below="@+id/relTot"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:background="@drawable/edt_square_ash"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Bangkok Eatery"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/application_text_color_hint"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/rest_adrs"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/application_text_color_hint"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/deltimLin"
+            android:layout_below="@+id/delvdRestAdrscash"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edt_square_ash"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:text="Delivery Time"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estimated time for 13.30"
+                android:textColorHint="@color/application_text_color_hint"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:layout_marginLeft="15dp"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/relTot"
+            android:background="@drawable/edt_square_ash"
+            android:layout_below="@+id/linpaymentcash"
+
+           >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="Total"
+                android:fontFamily="sans-serif-light"
+                android:textSize="15sp"
+
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="£50.75"
+                android:textSize="15sp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-light"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

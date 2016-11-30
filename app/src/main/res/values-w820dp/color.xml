@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="grey">#FF909090</color>
+    <color name="white">#ffffff</color>
+    <color name="blue">#105ba9</color>
+    <color name="transparent">#00000000</color>
+    <color name="list_background">#ffffff</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#000</color>
+    <color name="focuscolor">#2d5a8c</color>
+    <color name="hintcolor">#B5B5B5</color>
+    <!-- For waiting response -->
+    <color name="left_text_color">#7f7f7f</color>
+    <color name="right_text_color">#0b173f</color>
+    <color name="back_color">#006A4E</color>
+    <color name="counter_back">#ff0000</color>
+    <color name="error_color">#8D0017</color>
+    <color name="lightgray">#e7e7e7</color>
+    <color name="red">#FE0001</color>
+    <color name="dmp_color">#06ABAF</color>
+    <color name="orange_color">#FD7400</color>
+
+    <color name="primary">#607D8B</color>
+    <color name="primary_dark">#455A64</color>
+    <color name="primary_light">#CFD8DC</color>
+    <color name="accent">#4CAF50</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="transparent_color">#88231f20</color>
+
+
+</resources>

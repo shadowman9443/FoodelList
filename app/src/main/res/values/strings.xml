@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Foodel Marketplace</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_foodel_first">FoodelFirstActivity</string>
+    <string name="book_table">Book Table</string>
+    <string name="order_take">Order Take Away</string>
+    <string name="order_table">Order At Table</string>
+    <string name="find_place">FIND PLACES</string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="create_acnt">Create Account</string>
+    <string name="login">Create Account</string>
+    <string name="creating_ac">by creating account i agree with Foodel\'s</string>
+    <string name="trm_cond"> Terms and Condtions,Privacy Policy and Cookies Policy</string>
+    <string name="title_activity_card_payment">CardPaymentActivity</string>
+     <string name="bilin_adrs">Billing Addres:18 Hatfield Road.St Albans. Al1 GHU\n
+    (untick this box to change this billing address)</string>
+    <string name="rest_adrs">Billing Addres:18 Hatfield Road.St Albans</string>
+    <string name="mmyy">\t MM/YY</string>
+    <string name="title_activity_starters">StartersActivity</string>
+    <string name="item_desc">Green Mango and papaya spring rolls sandwith with chilli sauce</string>
+    <string name="title_activity_tell_afrnd_actvity">TellAFrndActvity</string>
+     <string name="tell_a_friend">Tell a friend and share the love.\n
+    \nWe would love for you to tell your friends and family about our amazing
+   app and help them earn. Just click the button below to send them a text or an email.\n
+       \nWhen they apply and start their 1st job through our app you will both receive a £10 to spend as you wish.\n
+       \nTell as many friends as you like and earn £10 each time a friend starts working via this app.\n
+
+
+</string>
+    <string name="title_activity_order_confirmation">OrderConfirmationActivity</string>
+    <string name="tell_a_friend_small">Tell a friend and share the love.\n
+    We would love for you to tell your friends and family about our amazing
+   app and help them earn. Just click the button below to send them a text or an email.
+       When they apply and start their 1st job through our app you will both receive a £10 to spend as you wish</string>
+    <string name="title_activity_deno">Deno</string>
+    <string name="title_aboute_us">At Bangkok Eatery our goal is to provide you a faster of traditonal and authentic Halal,Indian food that will keep you coming back for more .We take pride in offering a diverse set of dishes delivered to your home or office.There are plenty of specials available for delivery or collection that will satisfy your hunger.Let Bangkok Eatery help you make your next night in the best possible.
+    \n\nOrder your take away ,track your orders,earn loyality points and benefit from greate offers and discounts just order here.Don\'t forget to let us know if you enjoyed your meal by leaving feedback.Bon appetite!
+    \n\nTo find out the Food Hygiene Ratings of Establishment to go....</string>
+
+</resources>

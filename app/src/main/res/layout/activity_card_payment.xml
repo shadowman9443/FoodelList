@@ -1,0 +1,469 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    > <RelativeLayout
+    android:id="@+id/firstHead"
+    android:layout_width="match_parent"
+    android:layout_height="50dp" android:background="#DDDDDD"
+    >
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/left_arrow"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/foodel_mini"
+        android:layout_centerInParent="true"
+        />
+
+
+
+</RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/firstHead"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:text="PAYMENT"
+        android:id="@+id/txtPayment"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/txtPayment"
+
+        android:text="How would you like to pay?"
+        android:textSize="9sp"
+        android:id="@+id/place"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mainScroller"
+        android:layout_below="@+id/place"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="#F4F4F4"
+                android:id="@+id/mainRel">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/firstLin">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/redBtn"
+                        android:layout_gravity="center"
+                        android:background="@drawable/apptheme_btn_radio_on_holo_light"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pay with debit or credit card"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/black"
+                        android:layout_toRightOf="@+id/redBtn"/>
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="170dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/firstLin"
+                    android:id="@+id/cards"
+                    android:layout_marginLeft="44dp"
+                    android:background="@drawable/cards"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cards"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/txtcrdNumb"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12sp"
+                    android:text="Card Number"/>
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/txtcrdNumb"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/m_cardno"
+                    android:background="@drawable/edt_square_shape"/>
+                <LinearLayout
+                    android:id="@+id/rel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/m_cardno"
+                    android:orientation="horizontal"
+                    android:weightSum="2" >
+
+                    <RelativeLayout
+                        android:id="@+id/leftYes"
+                        android:layout_width="0dp"
+                        android:layout_height="65dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+
+                        android:clickable="true"
+                        android:onClick="onYesClick"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:clickable="false"
+                            android:text="Expire Date"
+                            android:textSize="12sp"
+                            android:id="@+id/txtExpire"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:clickable="false"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/m_expiarydate"
+                            android:layout_below="@+id/txtExpire"
+                            android:textSize="10sp"
+                            android:text="@string/mmyy"
+                            android:background="@drawable/edt_square_shape"
+                            />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rightNo"
+                        android:layout_width="0dp"
+                        android:layout_height="65dp"
+                        android:layout_weight="1"
+
+                        android:clickable="true"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:clickable="false"
+                            android:text="Security Code"
+                            android:textSize="12sp"
+                            android:id="@+id/txtSecured"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="10dp"
+                            android:clickable="false"
+                            android:id="@+id/m_securitycode"
+                            android:layout_below="@+id/txtSecured"
+                            android:text=""
+                            android:background="@drawable/edt_square_shape"
+                            android:drawableRight="@drawable/question"
+                            />
+                        <View
+                            android:id="@+id/dividerloine"
+                            android:layout_width="1dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:background="@color/viewdivider"
+                            android:layout_alignTop="@+id/m_securitycode"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/txtcameoncar"
+                    android:textSize="12sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:text="Name On Card"/>
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/txtcameoncar"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/edtNameonCards"
+                    android:background="@drawable/edt_square_shape"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edtNameonCards"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/blnAdrsLin"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edt_square_shape">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/blnBtn"
+                        android:layout_gravity="center"
+                        android:background="@drawable/apptheme_btn_radio_off_holo_light"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="@string/bilin_adrs"
+                        android:layout_gravity="center"
+                        android:textSize="9sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/redBtn"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/blnAdrsLin"
+                    android:id="@+id/adrsLIn"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cards"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:text="Address Line 1"/>
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:layout_below="@+id/txtcrdNumb"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/edtadrslinOne"
+                        android:background="@drawable/edt_square_shape"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cards"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:text="Address Line 2"/>
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:layout_below="@+id/txtcrdNumb"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/edtadrslinTwo"
+                        android:background="@drawable/edt_square_shape"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cards"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:text="City"/>
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:layout_below="@+id/txtcrdNumb"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/edtCity"
+                        android:background="@drawable/edt_square_shape"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cards"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:text="Postcode"/>
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:layout_below="@+id/txtcrdNumb"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/edtPostCode"
+                        android:background="@drawable/edt_square_shape"/>
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/paceorder"
+                    android:layout_below="@+id/adrsLIn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/pace_oreder_shape"
+                    android:gravity="center"
+                    android:text="PLACE MY ORDER"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/cashLin"
+                android:background="#F4F4F4"
+                android:layout_below="@+id/mainRel">
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/blnCash"
+                    android:layout_gravity="center"
+                    android:background="@drawable/apptheme_btn_radio_off_holo_light"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="Cash"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/blnCash"/>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/totLIn"
+                android:layout_below="@+id/cashLin"
+                android:background="#F4F4F4"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="Total"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="£50.75"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/black"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/delvdRestAdrs"
+                android:layout_below="@+id/totLIn"
+                android:background="#F4F4F4"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Bangkok Eatery"
+                    android:textSize="11sp"
+                    android:layout_gravity="center"
+                    android:textColorHint="@color/application_text_color_hint"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/bilin_adrs"
+                    android:textSize="11sp"
+                    android:layout_gravity="center"
+                    android:textColorHint="@color/application_text_color_hint"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/deltimLin"
+                android:layout_below="@+id/delvdRestAdrs"
+                android:background="#F4F4F4">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="Delivery Time"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Estimated time for 13.30"
+                    android:textColorHint="@color/application_text_color_hint"
+                    android:layout_gravity="center"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="15dp"
+                  />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
+
